@@ -1,0 +1,12 @@
+BcsMain 
+{
+	int a; int b; int c; int d; int x; int total;
+
+	b = 10; c = 20;
+	d = b;
+
+	a = b + c * d;
+	x = a + b * c + d;
+	total = 2 * x + 3 * a
+}
+

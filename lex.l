@@ -1,7 +1,9 @@
 %{
     #include <stdio.h>
     #include <stdlib.h>
+    #include <string.h>
     #include "./y.tab.h"
+
 %}
 
 digit [0-9]
@@ -24,9 +26,9 @@ relop "<"|">"|"<="|">="|"=="|"!="
 
 "bool"          {return BOOL;}
 
-{num}           {return NUM;}
+{num}           {yylval.s = strdup(yytext); return NUM;}
 
-{id}            {return ID;}
+{id}            {yylval.s = strdup(yytext); return ID;}
 
 {relop}         {return RELOP;}
 

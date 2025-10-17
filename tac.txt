@@ -1,0 +1,20 @@
+b = 10
+
+c = 20
+
+d = b
+
+t1 = c * d
+t2 = b + t1
+a = t2
+
+t3 = b * c
+t4 = a + t3
+t5 = t4 + d
+x = t5
+
+t6 = 2 * x
+t7 = 3 * a
+t8 = t6 + t7
+total = t8
+
