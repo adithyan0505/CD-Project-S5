@@ -1,0 +1,25 @@
+BcsMain 
+{
+    int x; int y; 
+    bool flag
+
+    x = 10; y = 20;
+    flag = 1;
+
+    if (x < y {
+        x = x + 5;
+        y = y * 2
+    } else {
+        y = y + 1;
+        flag = 0;
+    }
+
+    while (x <= y) {
+        x = x + 1;
+        if (flag == 1) {
+            y = y + x
+        } else {
+            y = y - x
+        };
+    
+}
